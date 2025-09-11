@@ -1,757 +1,961 @@
-,key,spot,rating,lien
-6,Fri_05_après-midi,La-Sauzaie,1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+,spot,day,time,rating,heure_f,rk_time,key1,date,key,date_time,lien
+0,La-Baie-Des-Sables,Thu_11,après-midi,1,15,0,0_Thu_11,2025-09-11,2025-09-11 15:00:00,2025-09-11_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-6,Fri_05_après-midi,Les-Dunes,-1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+1,La-Baie-Des-Sables,Thu_11,soir,1,18,1,1_Thu_11,2025-09-11,2025-09-11 18:00:00,2025-09-11_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-6,Fri_05_après-midi,Saint-Gilles-Croixde-Vie,2,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+2,La-Baie-Des-Sables,Fri_12,matin,1,9,2,2_Fri_12,2025-09-12,2025-09-12 09:00:00,2025-09-12_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-5,Fri_05_matin,La-Sauzaie,3,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+3,La-Baie-Des-Sables,Fri_12,après-midi,2,15,3,3_Fri_12,2025-09-12,2025-09-12 15:00:00,2025-09-12_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-5,Fri_05_matin,Les-Dunes,-1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+4,Tanchet,Fri_12,soir,0,18,4,4_Fri_12,2025-09-12,2025-09-12 18:00:00,2025-09-12_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-5,Fri_05_matin,Saint-Gilles-Croixde-Vie,3,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+4,La-Sauzaie,Fri_12,soir,0,18,4,4_Fri_12,2025-09-12,2025-09-12 18:00:00,2025-09-12_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-7,Fri_05_soir,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+4,Plage-Des-Granges,Fri_12,soir,0,18,4,4_Fri_12,2025-09-12,2025-09-12 18:00:00,2025-09-12_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-7,Fri_05_soir,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+4,La-Baie-Des-Sables,Fri_12,soir,0,18,4,4_Fri_12,2025-09-12,2025-09-12 18:00:00,2025-09-12_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-7,Fri_05_soir,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+4,Saint-Gilles-Croixde-Vie,Fri_12,soir,0,18,4,4_Fri_12,2025-09-12,2025-09-12 18:00:00,2025-09-12_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-15,Mon_08_après-midi,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+4,Sion,Fri_12,soir,0,18,4,4_Fri_12,2025-09-12,2025-09-12 18:00:00,2025-09-12_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-15,Mon_08_après-midi,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+4,Les-Dunes,Fri_12,soir,0,18,4,4_Fri_12,2025-09-12,2025-09-12 18:00:00,2025-09-12_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-15,Mon_08_après-midi,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+5,Sion,Sat_13,matin,1,9,5,5_Sat_13,2025-09-13,2025-09-13 09:00:00,2025-09-13_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-14,Mon_08_matin,La-Sauzaie,1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+6,Plage-Des-Granges,Sat_13,après-midi,0,15,6,6_Sat_13,2025-09-13,2025-09-13 15:00:00,2025-09-13_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-14,Mon_08_matin,Les-Dunes,-1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+6,Tanchet,Sat_13,après-midi,0,15,6,6_Sat_13,2025-09-13,2025-09-13 15:00:00,2025-09-13_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-14,Mon_08_matin,Saint-Gilles-Croixde-Vie,1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+6,La-Baie-Des-Sables,Sat_13,après-midi,0,15,6,6_Sat_13,2025-09-13,2025-09-13 15:00:00,2025-09-13_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-16,Mon_08_soir,La-Sauzaie,3,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+6,Les-Dunes,Sat_13,après-midi,0,15,6,6_Sat_13,2025-09-13,2025-09-13 15:00:00,2025-09-13_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-16,Mon_08_soir,Les-Dunes,-1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+6,La-Sauzaie,Sat_13,après-midi,0,15,6,6_Sat_13,2025-09-13,2025-09-13 15:00:00,2025-09-13_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-16,Mon_08_soir,Saint-Gilles-Croixde-Vie,3,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+6,Saint-Gilles-Croixde-Vie,Sat_13,après-midi,0,15,6,6_Sat_13,2025-09-13,2025-09-13 15:00:00,2025-09-13_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-9,Sat_06_après-midi,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+6,Sion,Sat_13,après-midi,0,15,6,6_Sat_13,2025-09-13,2025-09-13 15:00:00,2025-09-13_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-9,Sat_06_après-midi,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+7,La-Baie-Des-Sables,Sat_13,soir,2,18,7,7_Sat_13,2025-09-13,2025-09-13 18:00:00,2025-09-13_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-9,Sat_06_après-midi,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+8,Tanchet,Sun_14,matin,0,9,8,8_Sun_14,2025-09-14,2025-09-14 09:00:00,2025-09-14_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-8,Sat_06_matin,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+8,Sion,Sun_14,matin,0,9,8,8_Sun_14,2025-09-14,2025-09-14 09:00:00,2025-09-14_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-8,Sat_06_matin,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+8,Saint-Gilles-Croixde-Vie,Sun_14,matin,0,9,8,8_Sun_14,2025-09-14,2025-09-14 09:00:00,2025-09-14_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-8,Sat_06_matin,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+8,Les-Dunes,Sun_14,matin,0,9,8,8_Sun_14,2025-09-14,2025-09-14 09:00:00,2025-09-14_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-10,Sat_06_soir,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+8,Plage-Des-Granges,Sun_14,matin,0,9,8,8_Sun_14,2025-09-14,2025-09-14 09:00:00,2025-09-14_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-10,Sat_06_soir,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+8,La-Baie-Des-Sables,Sun_14,matin,0,9,8,8_Sun_14,2025-09-14,2025-09-14 09:00:00,2025-09-14_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-10,Sat_06_soir,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+8,La-Sauzaie,Sun_14,matin,0,9,8,8_Sun_14,2025-09-14,2025-09-14 09:00:00,2025-09-14_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-12,Sun_07_après-midi,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+9,La-Sauzaie,Sun_14,après-midi,0,15,9,9_Sun_14,2025-09-14,2025-09-14 15:00:00,2025-09-14_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-12,Sun_07_après-midi,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+9,Sion,Sun_14,après-midi,0,15,9,9_Sun_14,2025-09-14,2025-09-14 15:00:00,2025-09-14_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-12,Sun_07_après-midi,Saint-Gilles-Croixde-Vie,1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+9,Tanchet,Sun_14,après-midi,0,15,9,9_Sun_14,2025-09-14,2025-09-14 15:00:00,2025-09-14_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-11,Sun_07_matin,La-Sauzaie,1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+9,La-Baie-Des-Sables,Sun_14,après-midi,0,15,9,9_Sun_14,2025-09-14,2025-09-14 15:00:00,2025-09-14_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-11,Sun_07_matin,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+9,Plage-Des-Granges,Sun_14,après-midi,0,15,9,9_Sun_14,2025-09-14,2025-09-14 15:00:00,2025-09-14_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-11,Sun_07_matin,Saint-Gilles-Croixde-Vie,1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+9,Les-Dunes,Sun_14,après-midi,0,15,9,9_Sun_14,2025-09-14,2025-09-14 15:00:00,2025-09-14_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-13,Sun_07_soir,La-Sauzaie,1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+9,Saint-Gilles-Croixde-Vie,Sun_14,après-midi,0,15,9,9_Sun_14,2025-09-14,2025-09-14 15:00:00,2025-09-14_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-13,Sun_07_soir,Les-Dunes,-1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+10,La-Sauzaie,Sun_14,soir,0,18,10,10_Sun_14,2025-09-14,2025-09-14 18:00:00,2025-09-14_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-13,Sun_07_soir,Saint-Gilles-Croixde-Vie,2,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+10,Sion,Sun_14,soir,0,18,10,10_Sun_14,2025-09-14,2025-09-14 18:00:00,2025-09-14_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-3,Thu_04_après-midi,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+10,Plage-Des-Granges,Sun_14,soir,0,18,10,10_Sun_14,2025-09-14,2025-09-14 18:00:00,2025-09-14_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-3,Thu_04_après-midi,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+10,Tanchet,Sun_14,soir,0,18,10,10_Sun_14,2025-09-14,2025-09-14 18:00:00,2025-09-14_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-3,Thu_04_après-midi,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+10,Saint-Gilles-Croixde-Vie,Sun_14,soir,0,18,10,10_Sun_14,2025-09-14,2025-09-14 18:00:00,2025-09-14_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-2,Thu_04_matin,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+10,La-Baie-Des-Sables,Sun_14,soir,0,18,10,10_Sun_14,2025-09-14,2025-09-14 18:00:00,2025-09-14_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-2,Thu_04_matin,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+10,Les-Dunes,Sun_14,soir,0,18,10,10_Sun_14,2025-09-14,2025-09-14 18:00:00,2025-09-14_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-2,Thu_04_matin,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+11,Plage-Des-Granges,Mon_15,matin,0,9,11,11_Mon_15,2025-09-15,2025-09-15 09:00:00,2025-09-15_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-4,Thu_04_soir,La-Sauzaie,2,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+11,Tanchet,Mon_15,matin,0,9,11,11_Mon_15,2025-09-15,2025-09-15 09:00:00,2025-09-15_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-4,Thu_04_soir,Les-Dunes,-1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+11,Les-Dunes,Mon_15,matin,0,9,11,11_Mon_15,2025-09-15,2025-09-15 09:00:00,2025-09-15_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-4,Thu_04_soir,Saint-Gilles-Croixde-Vie,2,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+11,La-Sauzaie,Mon_15,matin,0,9,11,11_Mon_15,2025-09-15,2025-09-15 09:00:00,2025-09-15_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-18,Tue_09_après-midi,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+11,Saint-Gilles-Croixde-Vie,Mon_15,matin,0,9,11,11_Mon_15,2025-09-15,2025-09-15 09:00:00,2025-09-15_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-18,Tue_09_après-midi,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+11,Sion,Mon_15,matin,0,9,11,11_Mon_15,2025-09-15,2025-09-15 09:00:00,2025-09-15_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-18,Tue_09_après-midi,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+11,La-Baie-Des-Sables,Mon_15,matin,0,9,11,11_Mon_15,2025-09-15,2025-09-15 09:00:00,2025-09-15_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-17,Tue_09_matin,La-Sauzaie,1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+12,Les-Dunes,Mon_15,après-midi,0,15,12,12_Mon_15,2025-09-15,2025-09-15 15:00:00,2025-09-15_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-17,Tue_09_matin,Les-Dunes,-1,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+12,Sion,Mon_15,après-midi,0,15,12,12_Mon_15,2025-09-15,2025-09-15 15:00:00,2025-09-15_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-17,Tue_09_matin,Saint-Gilles-Croixde-Vie,2,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+12,La-Sauzaie,Mon_15,après-midi,0,15,12,12_Mon_15,2025-09-15,2025-09-15 15:00:00,2025-09-15_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-19,Tue_09_soir,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+12,Saint-Gilles-Croixde-Vie,Mon_15,après-midi,0,15,12,12_Mon_15,2025-09-15,2025-09-15 15:00:00,2025-09-15_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-19,Tue_09_soir,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+12,Plage-Des-Granges,Mon_15,après-midi,0,15,12,12_Mon_15,2025-09-15,2025-09-15 15:00:00,2025-09-15_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-19,Tue_09_soir,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+12,Tanchet,Mon_15,après-midi,0,15,12,12_Mon_15,2025-09-15,2025-09-15 15:00:00,2025-09-15_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-0,Wed_03_après-midi,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+12,La-Baie-Des-Sables,Mon_15,après-midi,0,15,12,12_Mon_15,2025-09-15,2025-09-15 15:00:00,2025-09-15_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-0,Wed_03_après-midi,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+13,Plage-Des-Granges,Mon_15,soir,0,18,13,13_Mon_15,2025-09-15,2025-09-15 18:00:00,2025-09-15_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-0,Wed_03_après-midi,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+13,Les-Dunes,Mon_15,soir,0,18,13,13_Mon_15,2025-09-15,2025-09-15 18:00:00,2025-09-15_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-1,Wed_03_soir,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+13,Tanchet,Mon_15,soir,0,18,13,13_Mon_15,2025-09-15,2025-09-15 18:00:00,2025-09-15_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-1,Wed_03_soir,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+13,Saint-Gilles-Croixde-Vie,Mon_15,soir,0,18,13,13_Mon_15,2025-09-15,2025-09-15 18:00:00,2025-09-15_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-1,Wed_03_soir,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+13,Sion,Mon_15,soir,0,18,13,13_Mon_15,2025-09-15,2025-09-15 18:00:00,2025-09-15_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-20,Wed_10_matin,La-Sauzaie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+13,La-Sauzaie,Mon_15,soir,0,18,13,13_Mon_15,2025-09-15,2025-09-15 18:00:00,2025-09-15_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-20,Wed_10_matin,Les-Dunes,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+14,La-Baie-Des-Sables,Tue_16,matin,2,9,14,14_Tue_16,2025-09-16,2025-09-16 09:00:00,2025-09-16_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
-20,Wed_10_matin,Saint-Gilles-Croixde-Vie,0,"https://fr.surf-forecast.com/breaks/6                   La-Sauzaie
-6                    Les-Dunes
-6     Saint-Gilles-Croixde-Vie
-5                   La-Sauzaie
-5                    Les-Dunes
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+15,La-Baie-Des-Sables,Tue_16,après-midi,3,15,15,15_Tue_16,2025-09-16,2025-09-16 15:00:00,2025-09-16_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
                 ...           
-1                    Les-Dunes
-1     Saint-Gilles-Croixde-Vie
-20                  La-Sauzaie
-20                   Les-Dunes
+20                     Tanchet
 20    Saint-Gilles-Croixde-Vie
-Name: spot, Length: 63, dtype: object/forecasts/latest/six_day"
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+16,La-Baie-Des-Sables,Tue_16,soir,3,18,16,16_Tue_16,2025-09-16,2025-09-16 18:00:00,2025-09-16_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+17,Sion,Wed_17,matin,2,9,17,17_Wed_17,2025-09-17,2025-09-17 09:00:00,2025-09-17_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+17,Plage-Des-Granges,Wed_17,matin,2,9,17,17_Wed_17,2025-09-17,2025-09-17 09:00:00,2025-09-17_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+18,Sion,Wed_17,après-midi,2,15,18,18_Wed_17,2025-09-17,2025-09-17 15:00:00,2025-09-17_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+18,Saint-Gilles-Croixde-Vie,Wed_17,après-midi,2,15,18,18_Wed_17,2025-09-17,2025-09-17 15:00:00,2025-09-17_après-midi,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+19,Saint-Gilles-Croixde-Vie,Wed_17,soir,1,18,19,19_Wed_17,2025-09-17,2025-09-17 18:00:00,2025-09-17_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+19,La-Sauzaie,Wed_17,soir,1,18,19,19_Wed_17,2025-09-17,2025-09-17 18:00:00,2025-09-17_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+19,Les-Dunes,Wed_17,soir,1,18,19,19_Wed_17,2025-09-17,2025-09-17 18:00:00,2025-09-17_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+19,Plage-Des-Granges,Wed_17,soir,1,18,19,19_Wed_17,2025-09-17,2025-09-17 18:00:00,2025-09-17_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+19,Tanchet,Wed_17,soir,1,18,19,19_Wed_17,2025-09-17,2025-09-17 18:00:00,2025-09-17_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+19,La-Baie-Des-Sables,Wed_17,soir,1,18,19,19_Wed_17,2025-09-17,2025-09-17 18:00:00,2025-09-17_soir,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+20,La-Sauzaie,Thu_18,matin,2,9,20,20_Thu_18,2025-09-18,2025-09-18 09:00:00,2025-09-18_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+20,Tanchet,Thu_18,matin,2,9,20,20_Thu_18,2025-09-18,2025-09-18 09:00:00,2025-09-18_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+20,Saint-Gilles-Croixde-Vie,Thu_18,matin,2,9,20,20_Thu_18,2025-09-18,2025-09-18 09:00:00,2025-09-18_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+20,Plage-Des-Granges,Thu_18,matin,2,9,20,20_Thu_18,2025-09-18,2025-09-18 09:00:00,2025-09-18_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+20,La-Baie-Des-Sables,Thu_18,matin,2,9,20,20_Thu_18,2025-09-18,2025-09-18 09:00:00,2025-09-18_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"
+20,Sion,Thu_18,matin,2,9,20,20_Thu_18,2025-09-18,2025-09-18 09:00:00,2025-09-18_matin,"https://fr.surf-forecast.com/breaks/0           La-Baie-Des-Sables
+1           La-Baie-Des-Sables
+2           La-Baie-Des-Sables
+3           La-Baie-Des-Sables
+4                      Tanchet
+                ...           
+20                     Tanchet
+20    Saint-Gilles-Croixde-Vie
+20           Plage-Des-Granges
+20          La-Baie-Des-Sables
+20                        Sion
+Name: spot, Length: 80, dtype: object/forecasts/latest/six_day"

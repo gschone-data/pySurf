@@ -1,7 +1,10 @@
+#fonction pour charger les données d'un spot.
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+from datetime import date, timedelta
+
 def load_data(spot):
-    import requests
-    from bs4 import BeautifulSoup
-    import pandas as pd
 
 
     url = f'https://fr.surf-forecast.com/breaks/{spot}/forecasts/latest/six_day'
@@ -45,3 +48,5 @@ def load_data(spot):
     
     df=pd.DataFrame({'spot':spot,'day':days,'time':timeofday,'rating':ratings})
     return df
+
+
