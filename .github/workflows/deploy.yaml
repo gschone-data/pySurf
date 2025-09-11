@@ -27,7 +27,7 @@ jobs:
         run: python main.py
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _site  # ou le dossier où main.py génère la page
 
@@ -44,7 +44,7 @@ jobs:
 
     steps:
       - name: Download Pages artifact
-        uses: actions/download-pages-artifact@v1
+        uses: actions/download-pages-artifact@v4
 
       - name: Deploy to GitHub Pages
         id: deploy
