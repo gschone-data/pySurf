@@ -64,8 +64,7 @@ def load_data_all(list_spots):
     res = res[res['rating'] == max_ratings]
 
     res['date_time'] = pd.to_datetime(res['date']).dt.strftime('%Y-%m-%d') + '_' + res['time'].astype(str)
-    res['lien']=f'https://fr.surf-forecast.com/breaks/{res['spot']}/forecasts/latest/six_day'
-
+    
     return res
 
 
