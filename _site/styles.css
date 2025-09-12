@@ -1,6 +1,4 @@
-td {
-  border: 1px solid black;
-}
+
 
 
 th{
@@ -9,4 +7,56 @@ th{
 
 *{font-family: Gotham, Tahoma, sans-serif;
   background-color: #a0d2eb;
+}
+
+
+table {
+overflow-x: hidden;
+overflow-y: scroll;
+width: 100%;
+background-color: darkgrey;
+border-color: #003430;
+border-radius: 5px;
+}
+table tr {
+height: 20px;
+}
+.table thead tr td {
+height: 20px;
+border-top: none;
+}
+
+
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #777975;
+}
+
+a:visited {
+  color: #777975;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #d3d6d1;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #d3d6d1;
+}
+
+a:active {
+  background: #777975;
+  color: #d3d6d1;
 }

@@ -6,14 +6,14 @@ from webscrapping import load_data_all as lda
 from jinja2 import Template
 from pretty_html_table import build_table
 
-# list_spots=['La-Sauzaie','Les-Dunes','Saint-Gilles-Croixde-Vie','Tanchet','La-Baie-Des-Sables','Plage-Des-Granges','Sion']
-# res=lda.load_data_all(list_spots)
-res=pd.read_csv('res_fin.csv')
+list_spots=['La-Sauzaie','Les-Dunes','Saint-Gilles-Croixde-Vie','Tanchet','La-Baie-Des-Sables','Plage-Des-Granges','Sion']
+res=lda.load_data_all(list_spots)
+#res=pd.read_csv('res_fin.csv')
 
 #ajout lien du spot
 res.loc[:,'spot']="<a href='https://fr.surf-forecast.com/breaks/"+res['spot']+"/forecasts/latest/six_day' target='_blank'>"+res['spot']+"</a>"
 
-res_fin=res.groupby(['key','date','time','rating'])['spot'].apply(lambda x: ' \n '.join(x)).reset_index()
+res_fin=res.groupby(['key','date','time','rating'])['spot'].apply(lambda x: ' <br> '.join(x)).reset_index()
 
 res_fin.loc[res_fin['rating'].isin([-1,0]), 'spot'] = ''
 #ajout icone rating
@@ -29,9 +29,22 @@ res_fin['rating_'] = res_fin['rating'].apply(transform_rating)
 
 res_fin['date'] = pd.to_datetime(res_fin['date']).dt.strftime('%d/%m/%Y')
 res_fin.sort_values(['key'], inplace=True)
+res_fin_max=res_fin.loc[res_fin['rating'].idxmax()]
 
 res_fin=res_fin[['date', 'time', 'rating_', 'spot']]
-html_table_blue_light = build_table(res_fin, 'blue_light')
+res_fin=res_fin.rename(columns={'rating_':'Rating','spot':'Spots','time':'Quand','date':'Date'})
+
+styled_df = res_fin.style.hide(axis='index')
+html_table=styled_df.to_html(index=False)       
+
+date_maj = date.today().strftime('%d/%m/%Y %H:%M')
+html_resume='<table>'
+html_resume += f'<tr><td><b>Dernière mise à jour : {date_maj}</b></td></tr>'
+html_resume += f'<tr><td><b>Meilleure session : {res_fin_max["date"]} {res_fin_max["time"]} - {res_fin_max["rating_"]} - Spots : {res_fin_max["spot"]}</b></td></tr>'
+html_resume += f'</table><br>'
+
+
+
 
 # Construire un tableau HTML simple
 # html_table = '<table>'
@@ -51,10 +64,13 @@ template_str = """
     <title>{{ title }}</title>
 </head>
 <body>
+<div style="display: flex; align-items: left;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Surfing_pictogram.svg/langfr-120px-Surfing_pictogram.svg.png" alt="Go To Surf">
-    <h1>{{ heading }}</h1>
+    <h1>{{ heading }}</h1></div>
     """
-template_str += html_table_blue_light
+
+template_str += html_resume
+template_str += html_table
 
 
 template = Template(template_str)
