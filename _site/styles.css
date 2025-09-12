@@ -1,0 +1,12 @@
+td {
+  border: 1px solid black;
+}
+
+
+th{
+  text-align:left;
+}
+
+*{font-family: Gotham, Tahoma, sans-serif;
+  background-color: #a0d2eb;
+}
