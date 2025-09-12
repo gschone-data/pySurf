@@ -4,3 +4,4 @@ jinja2
 datetime
 numpy
 pandas
+pretty_html_table
