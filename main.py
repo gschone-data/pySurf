@@ -6,11 +6,11 @@ from jinja2 import Template
 from pretty_html_table import build_table
 
 #liste des spots fixe pour le moment
-# list_spots=['La-Sauzaie','Les-Dunes','Saint-Gilles-Croixde-Vie','Tanchet','La-Baie-Des-Sables','Plage-Des-Granges','Sion','L-Aubraie','Sauveterre']
+list_spots=['La-Sauzaie','Les-Dunes','Saint-Gilles-Croixde-Vie','Tanchet','La-Baie-Des-Sables','Plage-Des-Granges','Sion','L-Aubraie','Sauveterre']
 # #recupération des données
-# res=lda.load_data_all(list_spots)
-#solution alternative tests
-res=pd.read_csv('test/res_fin.csv')
+res=lda.load_data_all(list_spots)
+# #solution alternative tests
+# res=pd.read_csv('test/res_fin.csv')
 
 #ajout lien du spot
 res.loc[:,'spot']="<a href='https://fr.surf-forecast.com/breaks/"+res['spot']+"/forecasts/latest/six_day' target='_blank'>"+res['spot']+"</a>"
