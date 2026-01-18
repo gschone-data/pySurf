@@ -33,7 +33,7 @@ body {
 /* ===== HERO HEADER ===== */
 .hero {
     background: var(--primary-gradient);
-    padding: 3rem 2rem;
+    padding: 2.5rem 2rem 3rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -60,13 +60,13 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.wave-icon {
-    width: 48px;
-    height: 48px;
-    color: white;
+.logo-img {
+    width: 70px;
+    height: 70px;
+    filter: brightness(0) invert(1);
     animation: wave 2s ease-in-out infinite;
 }
 
@@ -79,14 +79,71 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: white;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .tagline {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.1rem;
-    font-weight: 300;
-    margin-top: 0.25rem;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    margin-top: 0.5rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== REGION SELECTOR ===== */
+.region-selector {
+    background: var(--card-bg);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.region-label {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+}
+
+.region-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.region-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--bg-color);
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.region-btn:hover {
+    background: rgba(0, 180, 216, 0.1);
+    color: var(--accent-color);
+}
+
+.region-btn.active {
+    background: var(--primary-gradient);
+    color: white;
+    border-color: transparent;
 }
 
 /* ===== CONTAINER ===== */
@@ -278,20 +335,30 @@ footer a:hover {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .hero {
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem 2.5rem;
     }
 
     h1 {
         font-size: 1.75rem;
     }
 
-    .wave-icon {
-        width: 36px;
-        height: 36px;
+    .logo-img {
+        width: 50px;
+        height: 50px;
     }
 
     .tagline {
         font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .region-selector {
+        padding: 0.75rem 1rem;
+    }
+
+    .region-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
 
     .container {
@@ -314,6 +381,21 @@ footer a:hover {
 @media (max-width: 480px) {
     h1 {
         font-size: 1.5rem;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .region-buttons {
+        width: 100%;
+    }
+
+    .region-btn {
+        flex: 1;
+        text-align: center;
+        min-width: 45%;
     }
 
     .card {

@@ -1,11 +1,15 @@
 # Point d'entree principal - Generation du dashboard de previsions surf
 import pandas as pd
 import shutil
+import os
 from datetime import datetime
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 from webscrapping import load_data_all as aggregator
-from config import SURF_SPOTS, OUTPUT_PATH, SURF_FORECAST_BASE_URL
+from config import (
+    REGIONS, REGION_ORDER, DEFAULT_REGION,
+    SURF_FORECAST_BASE_URL, OUTPUT_DIR
+)
 
 
 def add_spot_links(df: pd.DataFrame) -> pd.DataFrame:
@@ -95,13 +99,16 @@ def find_best_session(df: pd.DataFrame) -> dict:
     }
 
 
-def generate_html(display_df: pd.DataFrame, best_session: dict) -> str:
+def generate_html(display_df: pd.DataFrame, best_session: dict,
+                  region_key: str, all_regions: dict) -> str:
     """
     Genere le HTML final a partir du template et des donnees.
 
     Args:
         display_df: DataFrame formate pour l'affichage
         best_session: Infos sur la meilleure session
+        region_key: Cle de la region actuelle
+        all_regions: Dictionnaire de toutes les regions
 
     Returns:
         Contenu HTML complet
@@ -109,6 +116,8 @@ def generate_html(display_df: pd.DataFrame, best_session: dict) -> str:
     # Configuration Jinja2
     env = Environment(loader=FileSystemLoader('templates'))
     template = env.get_template('index.html')
+
+    region_info = all_regions[region_key]
 
     # Selection et renommage des colonnes pour le tableau
     table_df = display_df[['date', 'time', 'rating_stars', 'spot']].copy()
@@ -118,10 +127,24 @@ def generate_html(display_df: pd.DataFrame, best_session: dict) -> str:
     styled_table = table_df.style.hide(axis='index')
     html_table = styled_table.to_html(index=False)
 
+    # Preparation des donnees des regions pour le selecteur
+    regions_list = []
+    for key in REGION_ORDER:
+        reg = all_regions[key]
+        regions_list.append({
+            'key': key,
+            'name': reg['name'],
+            'url': 'index.html' if key == DEFAULT_REGION else f"{reg['slug']}.html",
+            'is_current': key == region_key
+        })
+
     # Rendu du template
     html_output = template.render(
-        title="Go To Surf Vendee",
-        heading="Go To Surf Vendee",
+        title=f"Go To Surf - {region_info['name']}",
+        heading="Go To Surf",
+        region_name=region_info['name'],
+        regions=regions_list,
+        current_region=region_key,
         last_update=datetime.now().strftime('%d/%m/%Y %H:%M'),
         best_session=best_session,
         forecast_table=html_table
@@ -130,41 +153,77 @@ def generate_html(display_df: pd.DataFrame, best_session: dict) -> str:
     return html_output
 
 
-def main():
-    """Fonction principale d'execution."""
-    print("Recuperation des donnees de surf...")
+def process_region(region_key: str, all_regions: dict) -> tuple:
+    """
+    Traite une region complete: chargement des donnees et generation HTML.
 
-    # Recuperation et traitement des donnees
-    forecast_df = aggregator.load_data_all(SURF_SPOTS)
+    Args:
+        region_key: Cle de la region a traiter
+        all_regions: Dictionnaire de toutes les regions
+
+    Returns:
+        Tuple (html_content, output_filename)
+    """
+    region = all_regions[region_key]
+    spots = region['spots']
+
+    print(f"Traitement de {region['name']} ({len(spots)} spots)...")
+
+    # Recuperation des donnees
+    forecast_df = aggregator.load_data_all(spots)
 
     if forecast_df.empty:
-        print("Erreur: Aucune donnee recuperee")
-        return
-
-    print(f"Donnees recuperees pour {len(SURF_SPOTS)} spots")
-
-    # Preparation pour l'affichage
-    display_df = prepare_display_dataframe(forecast_df)
-
-    # Identification de la meilleure session
-    best_session = find_best_session(display_df)
+        print(f"  Attention: Aucune donnee pour {region['name']}")
+        # Creer un DataFrame vide avec les bonnes colonnes
+        display_df = pd.DataFrame(columns=['key', 'date', 'time', 'rating', 'spot', 'rating_stars'])
+        best_session = {'date': '-', 'time': '-', 'rating': '-', 'spots': '-'}
+    else:
+        print(f"  {len(forecast_df)} previsions recuperees")
+        display_df = prepare_display_dataframe(forecast_df)
+        best_session = find_best_session(display_df)
 
     # Generation du HTML
-    html_content = generate_html(display_df, best_session)
+    html_content = generate_html(display_df, best_session, region_key, all_regions)
 
-    # Ecriture du fichier de sortie
-    with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
-        f.write(html_content)
+    # Nom du fichier de sortie
+    if region_key == DEFAULT_REGION:
+        output_filename = 'index.html'
+    else:
+        output_filename = f"{region['slug']}.html"
+
+    return html_content, output_filename
+
+
+def main():
+    """Fonction principale d'execution."""
+    print("=" * 50)
+    print("Generation du dashboard de previsions surf")
+    print("=" * 50)
+
+    # Creer le dossier de sortie si necessaire
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    # Traiter chaque region
+    for region_key in REGION_ORDER:
+        html_content, output_filename = process_region(region_key, REGIONS)
+
+        # Ecriture du fichier de sortie
+        output_path = Path(OUTPUT_DIR) / output_filename
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+
+        print(f"  -> {output_path}")
 
     # Copie du CSS dans le dossier de sortie
     css_source = Path('templates/styles.css')
-    css_dest = Path('_site/styles.css')
+    css_dest = Path(OUTPUT_DIR) / 'styles.css'
     if css_source.exists():
         shutil.copy(css_source, css_dest)
-        print(f"CSS copie: {css_dest}")
+        print(f"\nCSS copie: {css_dest}")
 
-    print(f"Dashboard genere: {OUTPUT_PATH}")
-    print("ok")
+    print("\n" + "=" * 50)
+    print("Generation terminee!")
+    print("=" * 50)
 
 
 if __name__ == '__main__':

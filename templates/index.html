@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css?v=2">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,15 +13,23 @@
     <header class="hero">
         <div class="hero-content">
             <div class="logo-container">
-                <svg class="wave-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 12C2 12 5 8 9 8C13 8 15 12 19 12C23 12 23 8 23 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M2 17C2 17 5 13 9 13C13 13 15 17 19 17C23 17 23 13 23 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Surfing_pictogram.svg/langfr-120px-Surfing_pictogram.svg.png" alt="Surf" class="logo-img">
                 <h1>{{ heading }}</h1>
             </div>
             <p class="tagline">Trouvez les meilleures vagues</p>
         </div>
     </header>
+
+    <nav class="region-selector">
+        <span class="region-label">Region :</span>
+        <div class="region-buttons">
+            {% for region in regions %}
+            <a href="{{ region.url }}" class="region-btn {% if region.is_current %}active{% endif %}">
+                {{ region.name }}
+            </a>
+            {% endfor %}
+        </div>
+    </nav>
 
     <main class="container">
         <div class="info-cards">
@@ -54,7 +62,7 @@
         </div>
 
         <section class="forecast-section">
-            <h2>Previsions</h2>
+            <h2>Previsions - {{ region_name }}</h2>
             <div class="table-container">
                 {{ forecast_table | safe }}
             </div>
