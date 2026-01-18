@@ -1,6 +1,8 @@
 # Point d'entree principal - Generation du dashboard de previsions surf
 import pandas as pd
+import shutil
 from datetime import datetime
+from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 from webscrapping import load_data_all as aggregator
 from config import SURF_SPOTS, OUTPUT_PATH, SURF_FORECAST_BASE_URL
@@ -153,6 +155,13 @@ def main():
     # Ecriture du fichier de sortie
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
         f.write(html_content)
+
+    # Copie du CSS dans le dossier de sortie
+    css_source = Path('templates/styles.css')
+    css_dest = Path('_site/styles.css')
+    if css_source.exists():
+        shutil.copy(css_source, css_dest)
+        print(f"CSS copie: {css_dest}")
 
     print(f"Dashboard genere: {OUTPUT_PATH}")
     print("ok")
