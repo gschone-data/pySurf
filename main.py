@@ -58,7 +58,7 @@ def format_wave_info(height: float, period: int) -> str:
     if height <= 0:
         return '-'
     if period > 0:
-        return f"{height}m {period}s"
+        return f"{height}m //{period}s"
     return f"{height}m"
 
 
@@ -160,7 +160,7 @@ def generate_html(display_df: pd.DataFrame, best_session: dict,
 
     # Selection et renommage des colonnes pour le tableau
     table_df = display_df[['date', 'time', 'rating_stars', 'wave_info', 'spot']].copy()
-    table_df.columns = ['Date', 'Quand', 'Rating', 'Houle', 'Spots']
+    table_df.columns = ['Date', 'Quand', 'Rating', 'Houle // Periode ', 'Spots']
 
     # Generation du tableau HTML
     styled_table = table_df.style.hide(axis='index')
