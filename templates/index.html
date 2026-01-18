@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div style="display: flex; align-items: left;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Surfing_pictogram.svg/langfr-120px-Surfing_pictogram.svg.png" alt="Go To Surf">
+        <h1>{{ heading }}</h1>
+    </div>
+
+    <table>
+        <tr><td><b>Derniere mise a jour :</b> {{ last_update }}</td></tr>
+        <tr><td><b>Meilleure session :</b> {{ best_session.date }} {{ best_session.time }} - {{ best_session.rating }} - Spots : {{ best_session.spots }}</td></tr>
+    </table>
+    <br>
+
+    {{ forecast_table | safe }}
+</body>
+</html>
