@@ -5,19 +5,14 @@ on:
     - cron: '0 */3 * * *'  # toutes les 3 heures (UTC)
   workflow_dispatch:
 
-
 permissions:
   contents: read
   pages: write
   id-token: write
-  
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
 
+jobs:
+  build:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -35,23 +30,24 @@ jobs:
       - name: Run script
         run: python main.py
 
-      
+      - name: List _site contents
+        run: ls -la _site/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3 # Étape cruciale
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-          name: gh-pages
-
 
   deploy:
-      runs-on: ubuntu-latest
-      needs: build-and-deploy
-      permissions:
-        pages: write
-        id-token: write
-      steps:
-        - name: Deploy to GitHub Pages
-          id: deployment
-          uses: actions/deploy-pages@v4 # Pas de paramètre "path" ici
-          with:
-            artifact_name: gh-pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
