@@ -44,6 +44,24 @@ def rating_to_stars(rating: int) -> str:
     return ''
 
 
+def format_wave_info(height: float, period: int) -> str:
+    """
+    Formate les informations de houle pour l'affichage.
+
+    Args:
+        height: Hauteur en metres
+        period: Periode en secondes
+
+    Returns:
+        Chaine formatee (ex: "1.5m 12s")
+    """
+    if height <= 0:
+        return '-'
+    if period > 0:
+        return f"{height}m {period}s"
+    return f"{height}m"
+
+
 def prepare_display_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
     Prepare le DataFrame pour l'affichage HTML.
@@ -54,13 +72,28 @@ def prepare_display_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         DataFrame formate pour l'affichage
     """
+    df = df.copy()
+
     # Ajout des liens vers les spots
     display_df = add_spot_links(df)
 
-    # Consolidation: une ligne par creneau avec tous les spots
-    display_df = display_df.groupby(['key', 'date', 'time', 'rating'])['spot'].apply(
-        lambda x: ' <br> '.join(x)
-    ).reset_index()
+    # Colonnes supplementaires si absentes (compatibilite)
+    for col in ['wave_height', 'wave_dir', 'period', 'wind_speed', 'wind_dir', 'wind_state']:
+        if col not in display_df.columns:
+            display_df[col] = 0 if col in ['wave_height', 'period', 'wind_speed'] else ''
+
+    # Agreger par creneau: prendre les moyennes/max pour les donnees meteo
+    agg_funcs = {
+        'spot': lambda x: ' <br> '.join(x),
+        'wave_height': 'max',
+        'wave_dir': 'first',
+        'period': 'max',
+        'wind_speed': 'mean',
+        'wind_dir': 'first',
+        'wind_state': 'first'
+    }
+
+    display_df = display_df.groupby(['key', 'date', 'time', 'rating']).agg(agg_funcs).reset_index()
 
     # Masquer les spots pour les ratings invalides (0 ou -1)
     display_df.loc[display_df['rating'].isin([-1, 0]), 'spot'] = ''
@@ -70,6 +103,12 @@ def prepare_display_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
     # Formatage de la date
     display_df['date'] = pd.to_datetime(display_df['date']).dt.strftime('%d/%m/%Y')
+
+    # Formatage des donnees de houle (hauteur + periode uniquement)
+    display_df['wave_info'] = display_df.apply(
+        lambda row: format_wave_info(row['wave_height'], row['period']),
+        axis=1
+    )
 
     # Tri chronologique
     display_df = display_df.sort_values('key')
@@ -120,8 +159,8 @@ def generate_html(display_df: pd.DataFrame, best_session: dict,
     region_info = all_regions[region_key]
 
     # Selection et renommage des colonnes pour le tableau
-    table_df = display_df[['date', 'time', 'rating_stars', 'spot']].copy()
-    table_df.columns = ['Date', 'Quand', 'Rating', 'Spots']
+    table_df = display_df[['date', 'time', 'rating_stars', 'wave_info', 'spot']].copy()
+    table_df.columns = ['Date', 'Quand', 'Rating', 'Houle', 'Spots']
 
     # Generation du tableau HTML
     styled_table = table_df.style.hide(axis='index')
@@ -175,7 +214,9 @@ def process_region(region_key: str, all_regions: dict) -> tuple:
     if forecast_df.empty:
         print(f"  Attention: Aucune donnee pour {region['name']}")
         # Creer un DataFrame vide avec les bonnes colonnes
-        display_df = pd.DataFrame(columns=['key', 'date', 'time', 'rating', 'spot', 'rating_stars'])
+        display_df = pd.DataFrame(columns=[
+            'key', 'date', 'time', 'rating', 'spot', 'rating_stars', 'wave_info'
+        ])
         best_session = {'date': '-', 'time': '-', 'rating': '-', 'spots': '-'}
     else:
         print(f"  {len(forecast_df)} previsions recuperees")
