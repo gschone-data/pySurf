@@ -4,20 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>{{ title }}</title>
 </head>
 <body>
-    <div style="display: flex; align-items: left;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Surfing_pictogram.svg/langfr-120px-Surfing_pictogram.svg.png" alt="Go To Surf">
-        <h1>{{ heading }}</h1>
-    </div>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="logo-container">
+                <svg class="wave-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 12C2 12 5 8 9 8C13 8 15 12 19 12C23 12 23 8 23 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M2 17C2 17 5 13 9 13C13 13 15 17 19 17C23 17 23 13 23 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h1>{{ heading }}</h1>
+            </div>
+            <p class="tagline">Trouvez les meilleures vagues</p>
+        </div>
+    </header>
 
-    <table>
-        <tr><td><b>Derniere mise a jour :</b> {{ last_update }}</td></tr>
-        <tr><td><b>Meilleure session :</b> {{ best_session.date }} {{ best_session.time }} - {{ best_session.rating }} - Spots : {{ best_session.spots }}</td></tr>
-    </table>
-    <br>
+    <main class="container">
+        <div class="info-cards">
+            <div class="card update-card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <span class="card-label">Derniere mise a jour</span>
+                    <span class="card-value">{{ last_update }}</span>
+                </div>
+            </div>
 
-    {{ forecast_table | safe }}
+            <div class="card best-session-card">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="card-content">
+                    <span class="card-label">Meilleure session</span>
+                    <span class="card-value">{{ best_session.date }} - {{ best_session.time }}</span>
+                    <span class="card-rating">{{ best_session.rating }}</span>
+                    <span class="card-spots">{{ best_session.spots | safe }}</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="forecast-section">
+            <h2>Previsions</h2>
+            <div class="table-container">
+                {{ forecast_table | safe }}
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Donnees issues de <a href="https://www.surf-forecast.com" target="_blank">surf-forecast.com</a></p>
+    </footer>
 </body>
 </html>
