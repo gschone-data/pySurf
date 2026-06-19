@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css?v=4">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -71,33 +71,42 @@
                             <th>Date</th>
                             <th>Quand</th>
                             <th>Rating</th>
-                            <th>Houle // Periode</th>
+                            <th>Houle</th>
+                            <th>Periode</th>
                             <th>Vent</th>
+                            <th>Force</th>
+                            <th>Direction</th>
                             <th>Spots</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for slot in slots %}
-                        <tr class="slot-row" onclick="toggleSlot({{ loop.index }})">
+                        <tr class="slot-row{% if not loop.first and slot.date != loop.previtem.date %} day-start{% endif %}" onclick="toggleSlot({{ loop.index }})">
                             <td>{{ slot.date }}</td>
                             <td>{{ slot.time }}</td>
                             <td class="rating-cell">{{ slot.rating_stars }}</td>
-                            <td>{{ slot.wave_info }}</td>
-                            <td class="{{ slot.wind_class }}">{{ slot.wind_label }}</td>
+                            <td>{{ slot.height }}</td>
+                            <td>{{ slot.period }}</td>
+                            <td class="{{ slot.wind_class }}">{{ slot.wind_type }}</td>
+                            <td>{{ slot.wind_force }}</td>
+                            <td>{{ slot.wind_dir }}</td>
                             <td class="spots-cell">
                                 <span class="spots-names">{{ slot.spots | safe }}</span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-{{ loop.index }}" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     {% for s in slot.detail %}
                                     <div class="detail-spot">
                                         <span class="detail-name">{{ s.spot | safe }}</span>
                                         <span class="detail-rating">{{ s.rating_stars }}</span>
-                                        <span class="detail-wave">{{ s.wave_info }}</span>
-                                        <span class="detail-wind {{ s.wind_class }}">{{ s.wind_label }}</span>
+                                        <span class="detail-wave">{{ s.height }}</span>
+                                        <span class="detail-wave">{{ s.period }}</span>
+                                        <span class="detail-wind {{ s.wind_class }}">{{ s.wind_type }}</span>
+                                        <span class="detail-wind-force">{{ s.wind_force }}</span>
+                                        <span class="detail-wind-dir">{{ s.wind_dir }}</span>
                                     </div>
                                     {% endfor %}
                                 </div>
@@ -105,7 +114,7 @@
                         </tr>
                         {% else %}
                         <tr>
-                            <td colspan="6" class="no-data">Aucune donnee disponible pour cette region.</td>
+                            <td colspan="9" class="no-data">Aucune donnee disponible pour cette region.</td>
                         </tr>
                         {% endfor %}
                     </tbody>

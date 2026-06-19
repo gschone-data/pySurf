@@ -41,36 +41,36 @@ def rating_to_stars(rating: int) -> str:
     return ''
 
 
-def format_wave_info(height: float, period: int) -> str:
+def format_height(height) -> str:
+    """Formate la hauteur de houle (ex: "1.5m", ou "-" si nulle)."""
+    try:
+        height = float(height)
+    except (TypeError, ValueError):
+        height = 0.0
+    return f"{height}m" if height > 0 else '-'
+
+
+def format_period(period) -> str:
+    """Formate la periode de houle (ex: "12s", ou "-" si nulle)."""
+    try:
+        period = int(period)
+    except (TypeError, ValueError):
+        period = 0
+    return f"{period}s" if period > 0 else '-'
+
+
+def format_wind(speed, state: str, direction: str = '') -> dict:
     """
-    Formate les informations de houle pour l'affichage.
-
-    Args:
-        height: Hauteur en metres
-        period: Periode en secondes
-
-    Returns:
-        Chaine formatee (ex: "1.5m 12s")
-    """
-    if height <= 0:
-        return '-'
-    if period > 0:
-        return f"{height}m // {period}s"
-    return f"{height}m"
-
-
-def format_wind(speed, state: str, direction: str = '') -> tuple:
-    """
-    Formate les informations de vent pour l'affichage.
+    Decompose les informations de vent en colonnes distinctes.
 
     Args:
         speed: Vitesse du vent
-        state: Etat du vent (Offshore, Onshore, Cross-on, Cross-off, Glass)
-        direction: Direction (N, NE, SO...) optionnelle
+        state: Etat du vent (Offshore, Onshore, Cross, Cross-on, Cross-off, Glass)
+        direction: Direction (N, NE, SO...)
 
     Returns:
-        Tuple (label, css_class). Ex: ("Offshore // 15 (NE)", "wind-good").
-        ("-", "wind-na") si aucune donnee de vent exploitable.
+        Dict {type, force, dir, css}. Les champs vides valent "-" et css vaut
+        "wind-na" si aucune donnee de vent exploitable.
     """
     state = (state or '').strip()
     try:
@@ -79,21 +79,15 @@ def format_wind(speed, state: str, direction: str = '') -> tuple:
         speed = 0
 
     if not state and speed == 0:
-        return ('-', 'wind-na')
-
-    css_class = WIND_QUALITY.get(state, 'wind-na')
-
-    parts = []
-    if state:
-        parts.append(state)
-    parts.append(str(speed))
-    label = ' // '.join(parts)
+        return {'type': '-', 'force': '-', 'dir': '-', 'css': 'wind-na'}
 
     direction = (direction or '').strip()
-    if direction:
-        label = f"{label} ({direction})"
-
-    return (label, css_class)
+    return {
+        'type': state if state else '-',
+        'force': str(speed),
+        'dir': direction if direction else '-',
+        'css': WIND_QUALITY.get(state, 'wind-na'),
+    }
 
 
 def build_slots(df: pd.DataFrame) -> list:
@@ -109,9 +103,10 @@ def build_slots(df: pd.DataFrame) -> list:
 
     Returns:
         Liste de dicts, un par creneau, tries chronologiquement. Chaque dict:
-        {key, date, time, rating, rating_stars, spots, wave_info,
-         wind_label, wind_class, detail: [{spot, rating, rating_stars,
-         wave_info, wind_label, wind_class}, ...]}
+        {key, date, time, rating, rating_stars, spots, height, period,
+         wind_type, wind_force, wind_dir, wind_class,
+         detail: [{spot, rating, rating_stars, height, period,
+         wind_type, wind_force, wind_dir, wind_class}, ...]}
     """
     if df is None or df.empty:
         return []
@@ -132,16 +127,17 @@ def build_slots(df: pd.DataFrame) -> list:
         # Detail: tous les spots du creneau
         detail = []
         for _, row in group.iterrows():
-            wind_label, wind_class = format_wind(
-                row['wind_speed'], row['wind_state'], row['wind_dir']
-            )
+            wind = format_wind(row['wind_speed'], row['wind_state'], row['wind_dir'])
             detail.append({
                 'spot': spot_link(row['spot']),
                 'rating': int(row['rating']),
                 'rating_stars': rating_to_stars(int(row['rating'])),
-                'wave_info': format_wave_info(row['wave_height'], row['period']),
-                'wind_label': wind_label,
-                'wind_class': wind_class,
+                'height': format_height(row['wave_height']),
+                'period': format_period(row['period']),
+                'wind_type': wind['type'],
+                'wind_force': wind['force'],
+                'wind_dir': wind['dir'],
+                'wind_class': wind['css'],
             })
 
         # Resume: meilleur(s) spot(s) du creneau
@@ -155,9 +151,7 @@ def build_slots(df: pd.DataFrame) -> list:
         else:
             spots_html = ''
 
-        wind_label, wind_class = format_wind(
-            best['wind_speed'], best['wind_state'], best['wind_dir']
-        )
+        wind = format_wind(best['wind_speed'], best['wind_state'], best['wind_dir'])
 
         slots.append({
             'key': key,
@@ -166,11 +160,12 @@ def build_slots(df: pd.DataFrame) -> list:
             'rating': best_rating,
             'rating_stars': rating_to_stars(best_rating),
             'spots': spots_html,
-            'wave_info': format_wave_info(
-                best_rows['wave_height'].max(), best_rows['period'].max()
-            ),
-            'wind_label': wind_label,
-            'wind_class': wind_class,
+            'height': format_height(best_rows['wave_height'].max()),
+            'period': format_period(best_rows['period'].max()),
+            'wind_type': wind['type'],
+            'wind_force': wind['force'],
+            'wind_dir': wind['dir'],
+            'wind_class': wind['css'],
             'detail': detail,
         })
 

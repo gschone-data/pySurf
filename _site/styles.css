@@ -333,6 +333,11 @@ tbody tr:last-child td {
     cursor: pointer;
 }
 
+/* Separation horizontale entre les jours */
+.slot-row.day-start td {
+    border-top: 2px solid rgba(0, 119, 182, 0.25);
+}
+
 .spots-cell {
     display: flex;
     align-items: center;
@@ -369,7 +374,7 @@ tbody tr:last-child td {
 
 .detail-spot {
     display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    grid-template-columns: 1.8fr 1.1fr 0.7fr 0.7fr 0.9fr 0.6fr 0.8fr;
     gap: 0.75rem;
     align-items: center;
     padding: 0.6rem 1.25rem 0.6rem 2.25rem;
@@ -497,7 +502,7 @@ footer a:hover {
     }
 
     .detail-spot {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 0.4rem 0.75rem;
         padding-left: 1.25rem;
     }

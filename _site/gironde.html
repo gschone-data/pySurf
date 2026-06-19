@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css?v=4">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="card-content">
                     <span class="card-label">Derniere mise a jour</span>
-                    <span class="card-value">19/06/2026 11:39</span>
+                    <span class="card-value">19/06/2026 11:56</span>
                 </div>
             </div>
 
@@ -83,8 +83,11 @@
                             <th>Date</th>
                             <th>Quand</th>
                             <th>Rating</th>
-                            <th>Houle // Periode</th>
+                            <th>Houle</th>
+                            <th>Periode</th>
                             <th>Vent</th>
+                            <th>Force</th>
+                            <th>Direction</th>
                             <th>Spots</th>
                         </tr>
                     </thead>
@@ -94,71 +97,98 @@
                             <td>19/06/2026</td>
                             <td>matin</td>
                             <td class="rating-cell"></td>
-                            <td>0.9m // 10s</td>
-                            <td class="wind-bad">Onshore // 10 (WSW)</td>
+                            <td>0.9m</td>
+                            <td>10s</td>
+                            <td class="wind-bad">Onshore</td>
+                            <td>10</td>
+                            <td>WSW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-1" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.9m // 10s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 10 (WSW)</span>
+                                        <span class="detail-wave">0.9m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 10s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 10 (WSW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.9m // 10s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 10 (WSW)</span>
+                                        <span class="detail-wave">0.9m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.9m // 10s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 10 (WSW)</span>
+                                        <span class="detail-wave">0.9m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.9m // 10s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 10 (WSW)</span>
+                                        <span class="detail-wave">0.9m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 15 (W)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">W</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.9m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 10 (WSW)</span>
+                                        <span class="detail-wave">0.9m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 10 (W)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">W</span>
                                     </div>
                                     
                                 </div>
@@ -169,71 +199,98 @@
                             <td>19/06/2026</td>
                             <td>après-midi</td>
                             <td class="rating-cell"></td>
-                            <td>0.8m // 9s</td>
-                            <td class="wind-warn">Cross-on // 20 (NW)</td>
+                            <td>0.8m</td>
+                            <td>9s</td>
+                            <td class="wind-warn">Cross-on</td>
+                            <td>20</td>
+                            <td>NW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-2" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 20 (NW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (WNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">WNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (WNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">WNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (WNW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">WNW</span>
                                     </div>
                                     
                                 </div>
@@ -244,146 +301,200 @@
                             <td>19/06/2026</td>
                             <td>soir</td>
                             <td class="rating-cell"></td>
-                            <td>0.8m // 9s</td>
-                            <td class="wind-warn">Cross // 10 (NNW)</td>
+                            <td>0.8m</td>
+                            <td>9s</td>
+                            <td class="wind-warn">Cross</td>
+                            <td>10</td>
+                            <td>NNW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-3" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 10 (NNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 10 (N)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">N</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 10 (N)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">N</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 10 (NNW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 15 (NNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 10 (NNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 15 (N)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">N</span>
                                     </div>
                                     
                                 </div>
                             </td>
                         </tr>
                         
-                        <tr class="slot-row" onclick="toggleSlot(4)">
+                        <tr class="slot-row day-start" onclick="toggleSlot(4)">
                             <td>20/06/2026</td>
                             <td>matin</td>
                             <td class="rating-cell">★</td>
-                            <td>0.8m // 8s</td>
-                            <td class="wind-good">Glass // 5 (NW)</td>
+                            <td>0.8m</td>
+                            <td>8s</td>
+                            <td class="wind-good">Glass</td>
+                            <td>5</td>
+                            <td>NW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a> <br> <a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a> <br> <a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-4" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating">★</span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-good">Glass // 5 (NW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating">★</span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-good">Glass // 0 (WNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">0</span>
+                                        <span class="detail-wind-dir">WNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating">★</span>
-                                        <span class="detail-wave">0.8m // 8s</span>
-                                        <span class="detail-wind wind-good">Glass // 5 (NW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 5 (NW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 5 (NW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 5 (NW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 5 (NW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 5 (NW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                 </div>
@@ -394,71 +505,98 @@
                             <td>20/06/2026</td>
                             <td>après-midi</td>
                             <td class="rating-cell"></td>
-                            <td>0.8m // 8s</td>
-                            <td class="wind-warn">Cross // 20 (NNW)</td>
+                            <td>0.8m</td>
+                            <td>8s</td>
+                            <td class="wind-warn">Cross</td>
+                            <td>20</td>
+                            <td>NNW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-5" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 20 (NNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 25 (NNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">25</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 25 (NNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">25</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 20 (NNW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 20 (NNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 20 (NNW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 20 (NNW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.8m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 20 (NNW)</span>
+                                        <span class="detail-wave">0.8m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                 </div>
@@ -469,146 +607,200 @@
                             <td>20/06/2026</td>
                             <td>soir</td>
                             <td class="rating-cell"></td>
-                            <td>0.7m // 8s</td>
-                            <td class="wind-warn">Cross // 35 (NNW)</td>
+                            <td>0.7m</td>
+                            <td>8s</td>
+                            <td class="wind-warn">Cross</td>
+                            <td>35</td>
+                            <td>NNW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-6" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 35 (NNW)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">35</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 40 (NNW)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">40</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 30 (N)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">30</span>
+                                        <span class="detail-wind-dir">N</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 25 (N)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">25</span>
+                                        <span class="detail-wind-dir">N</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 30 (N)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">30</span>
+                                        <span class="detail-wind-dir">N</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 30 (N)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">30</span>
+                                        <span class="detail-wind-dir">N</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 35 (NNW)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">35</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 30 (N)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">30</span>
+                                        <span class="detail-wind-dir">N</span>
                                     </div>
                                     
                                 </div>
                             </td>
                         </tr>
                         
-                        <tr class="slot-row" onclick="toggleSlot(7)">
+                        <tr class="slot-row day-start" onclick="toggleSlot(7)">
                             <td>21/06/2026</td>
                             <td>matin</td>
                             <td class="rating-cell">★</td>
-                            <td>0.6m // 8s</td>
-                            <td class="wind-ok">Cross-off // 10 (SE)</td>
+                            <td>0.6m</td>
+                            <td>8s</td>
+                            <td class="wind-ok">Cross-off</td>
+                            <td>10</td>
+                            <td>SE</td>
                             <td class="spots-cell">
                                 <span class="spots-names"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a> <br> <a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a> <br> <a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a> <br> <a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-7" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating">★</span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (SE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">SE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating">★</span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 5 (E)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating">★</span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 10 (E)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating">★</span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 5 (SE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">SE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 5 (SE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">SE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 5 (ESE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">ESE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 10 (E)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 10 (E)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                 </div>
@@ -619,71 +811,98 @@
                             <td>21/06/2026</td>
                             <td>après-midi</td>
                             <td class="rating-cell"></td>
-                            <td>0.6m // 8s</td>
-                            <td class="wind-warn">Cross-on // 15 (NNW)</td>
+                            <td>0.6m</td>
+                            <td>8s</td>
+                            <td class="wind-warn">Cross-on</td>
+                            <td>15</td>
+                            <td>NNW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-8" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NNW)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NNW)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NNW)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.5m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NNW)</span>
+                                        <span class="detail-wave">0.5m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NNW)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.5m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 20 (NNW)</span>
+                                        <span class="detail-wave">0.5m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 20 (NNW)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 20 (NNW)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                 </div>
@@ -694,146 +913,200 @@
                             <td>21/06/2026</td>
                             <td>soir</td>
                             <td class="rating-cell"></td>
-                            <td>0.6m // 7s</td>
-                            <td class="wind-ok">Cross-off // 15 (NE)</td>
+                            <td>0.6m</td>
+                            <td>7s</td>
+                            <td class="wind-ok">Cross-off</td>
+                            <td>15</td>
+                            <td>NE</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-9" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 15 (NE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NNE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NNE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.5m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 5 (NE)</span>
+                                        <span class="detail-wave">0.5m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NNE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NNE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                 </div>
                             </td>
                         </tr>
                         
-                        <tr class="slot-row" onclick="toggleSlot(10)">
+                        <tr class="slot-row day-start" onclick="toggleSlot(10)">
                             <td>22/06/2026</td>
                             <td>matin</td>
                             <td class="rating-cell"></td>
-                            <td>0.4m // 7s</td>
-                            <td class="wind-bad">Onshore // 10 (WSW)</td>
+                            <td>0.4m</td>
+                            <td>7s</td>
+                            <td class="wind-bad">Onshore</td>
+                            <td>10</td>
+                            <td>WSW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-10" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 10 (WSW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 10 (WSW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 5 (W)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">W</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 10 (WSW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-good">Glass // 5 (W)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">W</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-good">Glass // 5 (W)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">W</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-good">Glass // 0 (WSW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">0</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 5 (WSW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                 </div>
@@ -844,71 +1117,98 @@
                             <td>22/06/2026</td>
                             <td>après-midi</td>
                             <td class="rating-cell"></td>
-                            <td>0.4m // 7s</td>
-                            <td class="wind-warn">Cross-on // 15 (NNW)</td>
+                            <td>0.4m</td>
+                            <td>7s</td>
+                            <td class="wind-warn">Cross-on</td>
+                            <td>15</td>
+                            <td>NNW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-11" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NNW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 10 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                 </div>
@@ -919,146 +1219,200 @@
                             <td>22/06/2026</td>
                             <td>soir</td>
                             <td class="rating-cell"></td>
-                            <td>0.3m // 7s</td>
-                            <td class="wind-ok">Cross-off // 5 (SSE)</td>
+                            <td>0.3m</td>
+                            <td>7s</td>
+                            <td class="wind-ok">Cross-off</td>
+                            <td>5</td>
+                            <td>SSE</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-12" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 5 (SSE)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">SSE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (SE)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">SE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (SE)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">SE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (SSE)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">SSE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (SSE)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">SSE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 5 (SE)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">SE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (SSE)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">SSE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 7s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (SSE)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">SSE</span>
                                     </div>
                                     
                                 </div>
                             </td>
                         </tr>
                         
-                        <tr class="slot-row" onclick="toggleSlot(13)">
+                        <tr class="slot-row day-start" onclick="toggleSlot(13)">
                             <td>23/06/2026</td>
                             <td>matin</td>
                             <td class="rating-cell"></td>
-                            <td>0.2m // 11s</td>
-                            <td class="wind-warn">Cross-on // 5 (SW)</td>
+                            <td>0.2m</td>
+                            <td>11s</td>
+                            <td class="wind-warn">Cross-on</td>
+                            <td>5</td>
+                            <td>SW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-13" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 11s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 5 (SW)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">11s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">SW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 11s</span>
-                                        <span class="detail-wind wind-good">Glass // 5 (SSE)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">11s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">SSE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 11s</span>
-                                        <span class="detail-wind wind-warn">Cross // 10 (SW)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">11s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">SW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 11s</span>
-                                        <span class="detail-wind wind-good">Glass // 0 (SSW)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">11s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">0</span>
+                                        <span class="detail-wind-dir">SSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 11s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 5 (SSE)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">11s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">SSE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 11s</span>
-                                        <span class="detail-wind wind-good">Glass // 5 (SW)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">11s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">SW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 11s</span>
-                                        <span class="detail-wind wind-good">Glass // 5 (SSE)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">11s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">SSE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 11s</span>
-                                        <span class="detail-wind wind-good">Glass // 0 (SW)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">11s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">0</span>
+                                        <span class="detail-wind-dir">SW</span>
                                     </div>
                                     
                                 </div>
@@ -1069,71 +1423,98 @@
                             <td>23/06/2026</td>
                             <td>après-midi</td>
                             <td class="rating-cell"></td>
-                            <td>0.3m // 10s</td>
-                            <td class="wind-warn">Cross-on // 15 (WNW)</td>
+                            <td>0.3m</td>
+                            <td>10s</td>
+                            <td class="wind-warn">Cross-on</td>
+                            <td>15</td>
+                            <td>WNW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-14" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (WNW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">WNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 20 (WNW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">WNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (WNW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">WNW</span>
                                     </div>
                                     
                                 </div>
@@ -1144,146 +1525,200 @@
                             <td>23/06/2026</td>
                             <td>soir</td>
                             <td class="rating-cell"></td>
-                            <td>0.4m // 10s</td>
-                            <td class="wind-ok">Cross-off // 15 (NE)</td>
+                            <td>0.4m</td>
+                            <td>10s</td>
+                            <td class="wind-ok">Cross-off</td>
+                            <td>15</td>
+                            <td>NE</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-15" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 15 (NE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-good">Offshore // 10 (ENE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">ENE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 10s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (ESE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">ESE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 10s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (E)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 10s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 15 (NE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 10s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 20 (NE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 10s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 20 (NE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (E)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                 </div>
                             </td>
                         </tr>
                         
-                        <tr class="slot-row" onclick="toggleSlot(16)">
+                        <tr class="slot-row day-start" onclick="toggleSlot(16)">
                             <td>24/06/2026</td>
                             <td>matin</td>
                             <td class="rating-cell"></td>
-                            <td>0.4m // 9s</td>
-                            <td class="wind-good">Glass // 5 (ENE)</td>
+                            <td>0.4m</td>
+                            <td>9s</td>
+                            <td class="wind-good">Glass</td>
+                            <td>5</td>
+                            <td>ENE</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-16" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-good">Glass // 5 (ENE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">ENE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 5 (NE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NNE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NNE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 5 (NE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (NE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 5 (ENE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">ENE</span>
                                     </div>
                                     
                                 </div>
@@ -1294,71 +1729,98 @@
                             <td>24/06/2026</td>
                             <td>après-midi</td>
                             <td class="rating-cell"></td>
-                            <td>0.4m // 9s</td>
-                            <td class="wind-warn">Cross-on // 25 (NNW)</td>
+                            <td>0.4m</td>
+                            <td>9s</td>
+                            <td class="wind-warn">Cross-on</td>
+                            <td>25</td>
+                            <td>NNW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-17" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 6s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 25 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">6s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">25</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 20 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 25 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">25</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 7s</span>
-                                        <span class="detail-wind wind-warn">Cross // 25 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">7s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">25</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 20 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 8s</span>
-                                        <span class="detail-wind wind-warn">Cross // 25 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">25</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 20 (NNW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">NNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 6s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 25 (NW)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">6s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">25</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                 </div>
@@ -1369,146 +1831,200 @@
                             <td>24/06/2026</td>
                             <td>soir</td>
                             <td class="rating-cell"></td>
-                            <td>0.6m // 8s</td>
-                            <td class="wind-ok">Cross-off // 15 (S)</td>
+                            <td>0.6m</td>
+                            <td>8s</td>
+                            <td class="wind-ok">Cross-off</td>
+                            <td>15</td>
+                            <td>S</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-18" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.5m // 6s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 15 (S)</span>
+                                        <span class="detail-wave">0.5m</span>
+                                        <span class="detail-wave">6s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">S</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 8s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 30 (ENE)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">30</span>
+                                        <span class="detail-wind-dir">ENE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.5m // 6s</span>
-                                        <span class="detail-wind wind-warn">Cross // 15 (S)</span>
+                                        <span class="detail-wave">0.5m</span>
+                                        <span class="detail-wave">6s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">S</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (ESE)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">ESE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 6s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (E)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">6s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 6s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 10 (SE)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">6s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">SE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.6m // 6s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (E)</span>
+                                        <span class="detail-wave">0.6m</span>
+                                        <span class="detail-wave">6s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 25 (ENE)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">25</span>
+                                        <span class="detail-wind-dir">ENE</span>
                                     </div>
                                     
                                 </div>
                             </td>
                         </tr>
                         
-                        <tr class="slot-row" onclick="toggleSlot(19)">
+                        <tr class="slot-row day-start" onclick="toggleSlot(19)">
                             <td>25/06/2026</td>
                             <td>matin</td>
                             <td class="rating-cell"></td>
-                            <td>0.4m // 8s</td>
-                            <td class="wind-good">Offshore // 15 (ESE)</td>
+                            <td>0.4m</td>
+                            <td>8s</td>
+                            <td class="wind-good">Offshore</td>
+                            <td>15</td>
+                            <td>ESE</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-19" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 5s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (ESE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">5s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">ESE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 5s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (ESE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">5s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">ESE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 5s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (ESE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">5s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">ESE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (E)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (ESE)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">ESE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 5s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (ESE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">5s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">ESE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.4m // 5s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (ESE)</span>
+                                        <span class="detail-wave">0.4m</span>
+                                        <span class="detail-wave">5s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">ESE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.2m // 8s</span>
-                                        <span class="detail-wind wind-good">Offshore // 15 (E)</span>
+                                        <span class="detail-wave">0.2m</span>
+                                        <span class="detail-wave">8s</span>
+                                        <span class="detail-wind wind-good">Offshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">E</span>
                                     </div>
                                     
                                 </div>
@@ -1519,71 +2035,98 @@
                             <td>25/06/2026</td>
                             <td>après-midi</td>
                             <td class="rating-cell"></td>
-                            <td>0.3m // 10s</td>
-                            <td class="wind-warn">Cross-on // 10 (NW)</td>
+                            <td>0.3m</td>
+                            <td>10s</td>
+                            <td class="wind-warn">Cross-on</td>
+                            <td>10</td>
+                            <td>NW</td>
                             <td class="spots-cell">
                                 <span class="spots-names"></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-20" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 10 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 10 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 10 (WNW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">WNW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-good">Glass // 5 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-good">Glass</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 10 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 5 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 15 (NW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">NW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 10s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 5 (WNW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">10s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">5</span>
+                                        <span class="detail-wind-dir">WNW</span>
                                     </div>
                                     
                                 </div>
@@ -1594,71 +2137,98 @@
                             <td>25/06/2026</td>
                             <td>soir</td>
                             <td class="rating-cell">★</td>
-                            <td>0.5m // 9s</td>
-                            <td class="wind-ok">Cross-off // 15 (SSE)</td>
+                            <td>0.5m</td>
+                            <td>9s</td>
+                            <td class="wind-ok">Cross-off</td>
+                            <td>15</td>
+                            <td>SSE</td>
                             <td class="spots-cell">
                                 <span class="spots-names"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                 <span class="expand-caret">&#9662;</span>
                             </td>
                         </tr>
                         <tr class="detail-row" id="detail-21" hidden>
-                            <td colspan="6">
+                            <td colspan="9">
                                 <div class="detail-spots">
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Soulacsur-Mer/forecasts/latest/six_day' target='_blank'>Soulacsur-Mer</a></span>
                                         <span class="detail-rating">★</span>
-                                        <span class="detail-wave">0.5m // 9s</span>
-                                        <span class="detail-wind wind-ok">Cross-off // 15 (SSE)</span>
+                                        <span class="detail-wave">0.5m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-ok">Cross-off</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">SSE</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Porge/forecasts/latest/six_day' target='_blank'>Le-Porge</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (WSW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">WSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Carcans-Plage/forecasts/latest/six_day' target='_blank'>Carcans-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (SW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">SW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Montalivetles-Bains/forecasts/latest/six_day' target='_blank'>Montalivetles-Bains</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.5m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross // 15 (SSW)</span>
+                                        <span class="detail-wave">0.5m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">SSW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Hourtin-Plage/forecasts/latest/six_day' target='_blank'>Hourtin-Plage</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 20 (SW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">20</span>
+                                        <span class="detail-wind-dir">SW</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Grand-Crohot/forecasts/latest/six_day' target='_blank'>Le-Grand-Crohot</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 4s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 10 (W)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">4s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">W</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Le-Truc-Vert/forecasts/latest/six_day' target='_blank'>Le-Truc-Vert</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.7m // 4s</span>
-                                        <span class="detail-wind wind-bad">Onshore // 10 (W)</span>
+                                        <span class="detail-wave">0.7m</span>
+                                        <span class="detail-wave">4s</span>
+                                        <span class="detail-wind wind-bad">Onshore</span>
+                                        <span class="detail-wind-force">10</span>
+                                        <span class="detail-wind-dir">W</span>
                                     </div>
                                     
                                     <div class="detail-spot">
                                         <span class="detail-name"><a href='https://fr.surf-forecast.com/breaks/Lacanau-Ocean/forecasts/latest/six_day' target='_blank'>Lacanau-Ocean</a></span>
                                         <span class="detail-rating"></span>
-                                        <span class="detail-wave">0.3m // 9s</span>
-                                        <span class="detail-wind wind-warn">Cross-on // 15 (SW)</span>
+                                        <span class="detail-wave">0.3m</span>
+                                        <span class="detail-wave">9s</span>
+                                        <span class="detail-wind wind-warn">Cross-on</span>
+                                        <span class="detail-wind-force">15</span>
+                                        <span class="detail-wind-dir">SW</span>
                                     </div>
                                     
                                 </div>
