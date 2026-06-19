@@ -333,9 +333,16 @@ tbody tr:last-child td {
     cursor: pointer;
 }
 
-/* Separation horizontale entre les jours */
-.slot-row.day-start td {
-    border-top: 2px solid rgba(0, 119, 182, 0.25);
+/* Separation horizontale entre les jours (ligne pleine largeur) */
+.day-separator td {
+    padding: 0;
+    height: 4px;
+    background: var(--primary-gradient);
+    border: none;
+}
+
+.day-separator:hover td {
+    background: var(--primary-gradient);
 }
 
 .spots-cell {
