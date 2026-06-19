@@ -80,6 +80,17 @@ TIME_MAPPING = {
     'soir': 18
 }
 
+# Mapping etat du vent -> classe CSS de qualite (couleur dans le tableau)
+# Offshore (vent de terre) = favorable, Onshore (vent de mer) = defavorable.
+WIND_QUALITY = {
+    'Offshore': 'wind-good',
+    'Glass': 'wind-good',
+    'Cross-off': 'wind-ok',
+    'Cross': 'wind-warn',
+    'Cross-on': 'wind-warn',
+    'Onshore': 'wind-bad',
+}
+
 # URL de base pour surf-forecast.com
 SURF_FORECAST_BASE_URL = 'https://fr.surf-forecast.com/breaks/{spot}/forecasts/latest/six_day'
 

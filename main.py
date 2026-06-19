@@ -8,25 +8,22 @@ from jinja2 import Environment, FileSystemLoader
 from webscrapping import load_data_all as aggregator
 from config import (
     REGIONS, REGION_ORDER, DEFAULT_REGION,
-    SURF_FORECAST_BASE_URL, OUTPUT_DIR
+    SURF_FORECAST_BASE_URL, OUTPUT_DIR, WIND_QUALITY
 )
 
 
-def add_spot_links(df: pd.DataFrame) -> pd.DataFrame:
+def spot_link(spot: str) -> str:
     """
-    Ajoute des liens cliquables vers surf-forecast.com pour chaque spot.
+    Construit un lien cliquable vers la page surf-forecast.com d'un spot.
 
     Args:
-        df: DataFrame avec une colonne 'spot'
+        spot: Nom du spot (slug URL surf-forecast)
 
     Returns:
-        DataFrame avec les spots transformes en liens HTML
+        Balise <a> HTML pointant vers la prevision du spot
     """
-    df = df.copy()
-    df['spot'] = df['spot'].apply(
-        lambda spot: f"<a href='{SURF_FORECAST_BASE_URL.format(spot=spot)}' target='_blank'>{spot}</a>"
-    )
-    return df
+    url = SURF_FORECAST_BASE_URL.format(spot=spot)
+    return f"<a href='{url}' target='_blank'>{spot}</a>"
 
 
 def rating_to_stars(rating: int) -> str:
@@ -62,89 +59,154 @@ def format_wave_info(height: float, period: int) -> str:
     return f"{height}m"
 
 
-def prepare_display_dataframe(df: pd.DataFrame) -> pd.DataFrame:
+def format_wind(speed, state: str, direction: str = '') -> tuple:
     """
-    Prepare le DataFrame pour l'affichage HTML.
+    Formate les informations de vent pour l'affichage.
 
     Args:
-        df: DataFrame brut des previsions
+        speed: Vitesse du vent
+        state: Etat du vent (Offshore, Onshore, Cross-on, Cross-off, Glass)
+        direction: Direction (N, NE, SO...) optionnelle
 
     Returns:
-        DataFrame formate pour l'affichage
+        Tuple (label, css_class). Ex: ("Offshore // 15 (NE)", "wind-good").
+        ("-", "wind-na") si aucune donnee de vent exploitable.
     """
-    df = df.copy()
+    state = (state or '').strip()
+    try:
+        speed = int(round(float(speed)))
+    except (TypeError, ValueError):
+        speed = 0
 
-    # Ajout des liens vers les spots
-    display_df = add_spot_links(df)
+    if not state and speed == 0:
+        return ('-', 'wind-na')
+
+    css_class = WIND_QUALITY.get(state, 'wind-na')
+
+    parts = []
+    if state:
+        parts.append(state)
+    parts.append(str(speed))
+    label = ' // '.join(parts)
+
+    direction = (direction or '').strip()
+    if direction:
+        label = f"{label} ({direction})"
+
+    return (label, css_class)
+
+
+def build_slots(df: pd.DataFrame) -> list:
+    """
+    Construit la liste des creneaux a afficher a partir du DataFrame brut.
+
+    Chaque creneau (un horaire d'une journee) regroupe tous les spots: une ligne
+    resume (meilleur spot + son vent/houle) et le detail de tous les spots tries
+    par note decroissante.
+
+    Args:
+        df: DataFrame brut des previsions (tous les spots, cf. load_data_all)
+
+    Returns:
+        Liste de dicts, un par creneau, tries chronologiquement. Chaque dict:
+        {key, date, time, rating, rating_stars, spots, wave_info,
+         wind_label, wind_class, detail: [{spot, rating, rating_stars,
+         wave_info, wind_label, wind_class}, ...]}
+    """
+    if df is None or df.empty:
+        return []
+
+    df = df.copy()
 
     # Colonnes supplementaires si absentes (compatibilite)
     for col in ['wave_height', 'wave_dir', 'period', 'wind_speed', 'wind_dir', 'wind_state']:
-        if col not in display_df.columns:
-            display_df[col] = 0 if col in ['wave_height', 'period', 'wind_speed'] else ''
+        if col not in df.columns:
+            df[col] = 0 if col in ['wave_height', 'period', 'wind_speed'] else ''
 
-    # Agreger par creneau: prendre les moyennes/max pour les donnees meteo
-    agg_funcs = {
-        'spot': lambda x: ' <br> '.join(x),
-        'wave_height': 'max',
-        'wave_dir': 'first',
-        'period': 'max',
-        'wind_speed': 'mean',
-        'wind_dir': 'first',
-        'wind_state': 'first'
-    }
+    slots = []
+    # groupby conserve l'ordre de tri par 'key' (sort=False) deja applique en amont
+    for key, group in df.groupby('key', sort=True):
+        # Tri des spots du creneau par note decroissante
+        group = group.sort_values('rating', ascending=False)
 
-    display_df = display_df.groupby(['key', 'date', 'time', 'rating']).agg(agg_funcs).reset_index()
+        # Detail: tous les spots du creneau
+        detail = []
+        for _, row in group.iterrows():
+            wind_label, wind_class = format_wind(
+                row['wind_speed'], row['wind_state'], row['wind_dir']
+            )
+            detail.append({
+                'spot': spot_link(row['spot']),
+                'rating': int(row['rating']),
+                'rating_stars': rating_to_stars(int(row['rating'])),
+                'wave_info': format_wave_info(row['wave_height'], row['period']),
+                'wind_label': wind_label,
+                'wind_class': wind_class,
+            })
 
-    # Masquer les spots pour les ratings invalides (0 ou -1)
-    display_df.loc[display_df['rating'].isin([-1, 0]), 'spot'] = ''
+        # Resume: meilleur(s) spot(s) du creneau
+        best_rating = int(group['rating'].max())
+        best_rows = group[group['rating'] == best_rating]
+        best = best_rows.iloc[0]
 
-    # Conversion des ratings en etoiles
-    display_df['rating_stars'] = display_df['rating'].apply(rating_to_stars)
+        # Noms des meilleurs spots (blanchis si rating invalide: 0 ou -1)
+        if best_rating > 0:
+            spots_html = ' <br> '.join(spot_link(s) for s in best_rows['spot'])
+        else:
+            spots_html = ''
 
-    # Formatage de la date
-    display_df['date'] = pd.to_datetime(display_df['date']).dt.strftime('%d/%m/%Y')
+        wind_label, wind_class = format_wind(
+            best['wind_speed'], best['wind_state'], best['wind_dir']
+        )
 
-    # Formatage des donnees de houle (hauteur + periode uniquement)
-    display_df['wave_info'] = display_df.apply(
-        lambda row: format_wave_info(row['wave_height'], row['period']),
-        axis=1
-    )
+        slots.append({
+            'key': key,
+            'date': pd.to_datetime(best['date']).strftime('%d/%m/%Y'),
+            'time': best['time'],
+            'rating': best_rating,
+            'rating_stars': rating_to_stars(best_rating),
+            'spots': spots_html,
+            'wave_info': format_wave_info(
+                best_rows['wave_height'].max(), best_rows['period'].max()
+            ),
+            'wind_label': wind_label,
+            'wind_class': wind_class,
+            'detail': detail,
+        })
 
-    # Tri chronologique
-    display_df = display_df.sort_values('key')
-
-    return display_df
+    return slots
 
 
-def find_best_session(df: pd.DataFrame) -> dict:
+def find_best_session(slots: list) -> dict:
     """
-    Trouve la meilleure session (rating le plus eleve).
+    Trouve la meilleure session (rating le plus eleve) parmi les creneaux.
 
     Args:
-        df: DataFrame des previsions
+        slots: Liste des creneaux (cf. build_slots)
 
     Returns:
         Dictionnaire avec les infos de la meilleure session
     """
-    if df.empty:
+    valid = [s for s in slots if s['rating'] > 0]
+    if not valid:
         return {'date': '-', 'time': '-', 'rating': '-', 'spots': '-'}
 
-    best_row = df.loc[df['rating'].idxmax()]
+    best = max(valid, key=lambda s: s['rating'])
     return {
-        'date': best_row['date'],
-        'time': best_row['time'],
-        'rating': best_row['rating_stars'],
-        'spots': best_row['spot']
+        'date': best['date'],
+        'time': best['time'],
+        'rating': best['rating_stars'],
+        'spots': best['spots'],
     }
 
 
-def generate_html(display_df: pd.DataFrame, best_session: dict,
+def generate_html(slots: list, best_session: dict,
                   region_key: str, all_regions: dict) -> str:
     """
     Genere le HTML final a partir du template et des donnees.
 
     Args:
-        display_df: DataFrame formate pour l'affichage
+        slots: Liste des creneaux a afficher (cf. build_slots)
         best_session: Infos sur la meilleure session
         region_key: Cle de la region actuelle
         all_regions: Dictionnaire de toutes les regions
@@ -157,14 +219,6 @@ def generate_html(display_df: pd.DataFrame, best_session: dict,
     template = env.get_template('index.html')
 
     region_info = all_regions[region_key]
-
-    # Selection et renommage des colonnes pour le tableau
-    table_df = display_df[['date', 'time', 'rating_stars', 'wave_info', 'spot']].copy()
-    table_df.columns = ['Date', 'Quand', 'Rating', 'Houle // Periode ', 'Spots']
-
-    # Generation du tableau HTML
-    styled_table = table_df.style.hide(axis='index')
-    html_table = styled_table.to_html(index=False)
 
     # Preparation des donnees des regions pour le selecteur
     regions_list = []
@@ -186,7 +240,7 @@ def generate_html(display_df: pd.DataFrame, best_session: dict,
         current_region=region_key,
         last_update=datetime.now().strftime('%d/%m/%Y %H:%M'),
         best_session=best_session,
-        forecast_table=html_table
+        slots=slots
     )
 
     return html_output
@@ -213,18 +267,15 @@ def process_region(region_key: str, all_regions: dict) -> tuple:
 
     if forecast_df.empty:
         print(f"  Attention: Aucune donnee pour {region['name']}")
-        # Creer un DataFrame vide avec les bonnes colonnes
-        display_df = pd.DataFrame(columns=[
-            'key', 'date', 'time', 'rating', 'spot', 'rating_stars', 'wave_info'
-        ])
+        slots = []
         best_session = {'date': '-', 'time': '-', 'rating': '-', 'spots': '-'}
     else:
         print(f"  {len(forecast_df)} previsions recuperees")
-        display_df = prepare_display_dataframe(forecast_df)
-        best_session = find_best_session(display_df)
+        slots = build_slots(forecast_df)
+        best_session = find_best_session(slots)
 
     # Generation du HTML
-    html_content = generate_html(display_df, best_session, region_key, all_regions)
+    html_content = generate_html(slots, best_session, region_key, all_regions)
 
     # Nom du fichier de sortie
     if region_key == DEFAULT_REGION:

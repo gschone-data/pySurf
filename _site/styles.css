@@ -296,22 +296,109 @@ tbody tr:last-child td {
 }
 
 /* Rating stars styling */
-td:nth-child(3) {
+.rating-cell {
     color: var(--star-color);
     font-size: 1.1rem;
+    white-space: nowrap;
 }
 
 /* Spots column */
-td:nth-child(4) a {
+.spots-cell a {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
 }
 
-td:nth-child(4) a:hover {
+.spots-cell a:hover {
     color: var(--text-primary);
     text-decoration: underline;
+}
+
+/* ===== WIND COLORS ===== */
+.wind-good { color: #1b9e4b; font-weight: 600; }   /* offshore / glass: favorable */
+.wind-ok   { color: #5fa800; font-weight: 500; }   /* cross-off: correct */
+.wind-warn { color: #e08a00; font-weight: 500; }   /* cross-on: moyen */
+.wind-bad  { color: #d64545; font-weight: 500; }   /* onshore: defavorable */
+.wind-na   { color: var(--text-muted); }
+
+/* ===== ACCORDION (lignes depliables) ===== */
+.table-hint {
+    padding: 0 1.5rem 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.slot-row {
+    cursor: pointer;
+}
+
+.spots-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.expand-caret {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.slot-row.open {
+    background-color: rgba(0, 180, 216, 0.06);
+}
+
+.slot-row.open .expand-caret {
+    transform: rotate(180deg);
+    color: var(--accent-color);
+}
+
+.detail-row td {
+    padding: 0;
+    background-color: rgba(0, 119, 182, 0.03);
+    border-bottom: 1px solid rgba(0, 119, 182, 0.06);
+}
+
+.detail-spots {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-spot {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.6rem 1.25rem 0.6rem 2.25rem;
+    font-size: 0.9rem;
+}
+
+.detail-spot:not(:last-child) {
+    border-bottom: 1px dashed rgba(0, 119, 182, 0.08);
+}
+
+.detail-name a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.detail-name a:hover {
+    text-decoration: underline;
+}
+
+.detail-rating {
+    color: var(--star-color);
+    white-space: nowrap;
+}
+
+.no-data {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 2rem 1rem;
 }
 
 /* ===== FOOTER ===== */
@@ -407,5 +494,11 @@ footer a:hover {
     th, td {
         padding: 0.5rem 0.75rem;
         font-size: 0.85rem;
+    }
+
+    .detail-spot {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.4rem 0.75rem;
+        padding-left: 1.25rem;
     }
 }

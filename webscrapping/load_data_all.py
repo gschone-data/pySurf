@@ -1,6 +1,7 @@
 # Fonction pour charger les donnees de tous les spots et selectionner les meilleurs par creneau
 from webscrapping import load_data_f as scraper
 import pandas as pd
+import re
 from datetime import date, timedelta
 import sys
 sys.path.append('..')
@@ -75,21 +76,20 @@ def build_date_sequence(day_numbers: list, start_date: date = None) -> list:
 def extract_day_number(day_string: str) -> int:
     """
     Extrait le numero du jour depuis le format surf-forecast.
-    Format attendu: "Sam_18" ou similaire.
+    Format attendu: "Vendredi19" (nom du jour colle au numero).
 
     Args:
-        day_string: Chaine contenant le jour (ex: "Sam_18")
+        day_string: Chaine contenant le jour (ex: "Vendredi19")
 
     Returns:
-        Numero du jour (ex: 18)
+        Numero du jour (ex: 19)
     """
-    if '_' in str(day_string):
-        return int(day_string.split('_')[1])
-    # Fallback: essayer de convertir directement
-    try:
-        return int(day_string)
-    except (ValueError, TypeError):
-        return date.today().day
+    # Recuperer les chiffres de fin de chaine
+    match = re.search(r'(\d+)$', str(day_string))
+    if match:
+        return int(match.group(1))
+    # Fallback: jour courant
+    return date.today().day
 
 
 def map_time_to_hour(time_period: str) -> int:
@@ -107,13 +107,18 @@ def map_time_to_hour(time_period: str) -> int:
 
 def load_data_all(list_spots: list) -> pd.DataFrame:
     """
-    Charge les donnees pour tous les spots et filtre les meilleurs ratings par creneau.
+    Charge les donnees pour tous les spots et les consolide par creneau.
+
+    Tous les spots sont conserves (aucun filtrage par meilleur rating): le choix
+    du meilleur spot et le detail de tous les spots se font a l'affichage
+    (cf. build_slots dans main.py).
 
     Args:
         list_spots: Liste des noms de spots
 
     Returns:
-        DataFrame avec les previsions consolidees
+        DataFrame avec toutes les previsions consolidees, colonnes incluant
+        rating (numerique), date, hour, key.
     """
     # Collecte des donnees de tous les spots
     all_data = []
@@ -152,12 +157,8 @@ def load_data_all(list_spots: list) -> pd.DataFrame:
         forecast_df['date'].dt.strftime('%Y-%m-%d') + ' ' + forecast_df['hour'].astype(str) + ':00:00'
     )
 
-    # Tri par cle temporelle
+    # Tri par cle temporelle (tous les spots sont conserves)
     forecast_df = forecast_df.sort_values('key')
-
-    # Selection des meilleurs ratings par creneau
-    max_ratings = forecast_df.groupby('key')['rating'].transform('max')
-    forecast_df = forecast_df[forecast_df['rating'] == max_ratings]
 
     # Colonne supplementaire pour reference
     forecast_df['date_time'] = forecast_df['date'].dt.strftime('%Y-%m-%d') + '_' + forecast_df['time']

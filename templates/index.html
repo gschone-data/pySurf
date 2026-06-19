@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css?v=3">
+    <link rel="stylesheet" type="text/css" href="styles.css?v=4">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -63,8 +63,53 @@
 
         <section class="forecast-section">
             <h2>Previsions - {{ region_name }}</h2>
+            <p class="table-hint">Cliquez sur une ligne pour voir tous les spots du creneau.</p>
             <div class="table-container">
-                {{ forecast_table | safe }}
+                <table class="forecast-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Quand</th>
+                            <th>Rating</th>
+                            <th>Houle // Periode</th>
+                            <th>Vent</th>
+                            <th>Spots</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for slot in slots %}
+                        <tr class="slot-row" onclick="toggleSlot({{ loop.index }})">
+                            <td>{{ slot.date }}</td>
+                            <td>{{ slot.time }}</td>
+                            <td class="rating-cell">{{ slot.rating_stars }}</td>
+                            <td>{{ slot.wave_info }}</td>
+                            <td class="{{ slot.wind_class }}">{{ slot.wind_label }}</td>
+                            <td class="spots-cell">
+                                <span class="spots-names">{{ slot.spots | safe }}</span>
+                                <span class="expand-caret">&#9662;</span>
+                            </td>
+                        </tr>
+                        <tr class="detail-row" id="detail-{{ loop.index }}" hidden>
+                            <td colspan="6">
+                                <div class="detail-spots">
+                                    {% for s in slot.detail %}
+                                    <div class="detail-spot">
+                                        <span class="detail-name">{{ s.spot | safe }}</span>
+                                        <span class="detail-rating">{{ s.rating_stars }}</span>
+                                        <span class="detail-wave">{{ s.wave_info }}</span>
+                                        <span class="detail-wind {{ s.wind_class }}">{{ s.wind_label }}</span>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <td colspan="6" class="no-data">Aucune donnee disponible pour cette region.</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </section>
     </main>
@@ -72,5 +117,15 @@
     <footer>
         <p>Donnees issues de <a href="https://www.surf-forecast.com" target="_blank">surf-forecast.com</a></p>
     </footer>
+
+    <script>
+        function toggleSlot(index) {
+            var detail = document.getElementById('detail-' + index);
+            if (!detail) return;
+            detail.hidden = !detail.hidden;
+            var row = detail.previousElementSibling;
+            if (row) row.classList.toggle('open', !detail.hidden);
+        }
+    </script>
 </body>
 </html>
